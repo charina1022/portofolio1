@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: rgba(0, 30, 60, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  src: url("./logo.png");
+  font-weight: bold;
+}
+
+nav a {
+  color: #AAC4F5;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #eef3f1;
+}
+
+.hero {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 180px 40px 120px;
+  padding: 150px 0;
+  background: linear-gradient(rgba(42, 92, 172, 0.4), rgba(42, 92, 172, 0.4)), url("./background.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+#about h2,
+#project h2,
+#contact h2,
+#anggota h2 {
+  color: #3c5b8ad1;
+  margin-bottom: 20px;
+}
+#about {
+  background-color: rgba(13, 133, 252, 0.2);
+}
+#contact{
+  background-color: rgba(13, 133, 252, 0.2);
+}
+.gallery {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  background-color: aliceblues;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  background-image: url(./blue.jpg);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card a {
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #8CA9FF;
+}
+
+.anggota-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background: #001a33;
+  padding: 130px 150px;
+}
+
+.anggota-card {
+  background: #00eaff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.anggota-card:hover {
+  transform: translateY(-5px);
+}
+
+.anggota-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.bundling {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.98s;
+  align-items: center;
+}
+.bundling img:hover {
+  transform: scale(1.05);
+}
+.mtk {
+  display: flex;
+  gap: 120px;
+  align-content: center;
+}
+
+#project {
+  background: #6596c5;
+  padding-left: 100px;
+  width: 1280px;
+  height: 580px;
+}
+
+
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s;
+}
+.produk img:hover {
+  transform: scale(1.05);
+}
+.ipas {
+  display: flex;
+  gap: 50px;
+  align-content: center;
+}
+
+#produk {
+  background: #6596c5;
+  padding-left: 100px;
+}
+
+.lho{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #8CA9FF;
+}
+.teks {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+.rfa {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+.crn {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+
+.reporttext {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #8CA9FF;
+}
+.teks {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+.rfa {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+.crn {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6596c5;
+}
+
+.nanas {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  background-color:  #6596c5;
+  text-align: center;
+}
+
+footer {
+  background: #001a33;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-links a {
+  color: #ddd;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #00ffee;
+}
